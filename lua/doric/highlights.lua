@@ -37,7 +37,7 @@ function M.build(p)
     Visual = { fg = p.fg_accent, bg = p.bg_shadow_intense },
     Search = { fg = p.fg_main, bg = p.bg_shadow_intense },
     IncSearch = { fg = p.bg_main, bg = p.fg_shadow_intense },
-    MatchParen = { fg = p.fg_shadow_intense, bg = p.bg_shadow_intense, bold = true },
+    MatchParen = { fg = p.fg_shadow_intense, bg = p.bg_shadow_intense },
     Folded = { fg = p.fg_shadow_subtle, bg = p.bg_shadow_subtle },
     Title = { fg = p.fg_shadow_intense, bold = true },
     Directory = { fg = p.fg_accent },
@@ -126,7 +126,7 @@ function M.build(p)
     DiagnosticFloatingInfo = { fg = p.fg_cyan },
     DiagnosticFloatingHint = { fg = p.fg_green },
 
-    LspReferenceText = { bg = p.bg_accent, underline = true },
+    LspReferenceText = { bg = p.bg_accent, underline = false, bold = true },
     LspReferenceRead = { bg = p.bg_accent, underline = true },
     LspReferenceWrite = { bg = p.bg_accent, underline = true },
     LspInlayHint = { fg = p.fg_shadow_subtle, bg = p.bg_accent, underline = true },
