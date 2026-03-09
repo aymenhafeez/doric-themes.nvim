@@ -60,6 +60,7 @@ function M.build(p)
     DiffFile = { fg = p.fg_shadow_intense, bold = true },
     DiffNewFile = { fg = p.fg_shadow_intense, bold = true },
     DiffLine = { fg = p.fg_shadow_subtle },
+    Conceal = { fg = p.fg_accent },
     SpellBad = { undercurl = true, sp = p.fg_red },
     SpellCap = { undercurl = true, sp = p.fg_blue },
     SpellLocal = { undercurl = true, sp = p.fg_cyan },
@@ -170,6 +171,7 @@ function M.build(p)
 
     FzfLuaNormal = { fg = p.fg_main, bg = p.bg_main },
     FzfLuaBorder = { fg = p.border, bg = p.bg_main },
+    FzfLuaBackdrop = { link = "Normal" },
     FzfLuaTitle = { fg = p.fg_shadow_intense, bg = p.bg_main, bold = true },
     FzfLuaPrompt = { fg = p.fg_shadow_subtle, bg = p.bg_shadow_subtle },
     FzfLuaCursor = { fg = p.fg_main, bg = p.bg_accent },
@@ -178,6 +180,9 @@ function M.build(p)
     FzfLuaPath = { fg = p.fg_shadow_subtle },
     FzfLuaLiveSym = { fg = p.fg_shadow_intense },
     FzfLuaFzfPointer = { fg = p.fg_shadow_intense, bold = true },
+    fzf1 = { link = "StatusLine" },
+    fzf2 = { link = "StatusLine" },
+    fzf3 = { link = "StatusLine" },
 
     WhichKey = { fg = p.fg_shadow_intense, bold = true },
     WhichKeyGroup = { fg = p.fg_shadow_subtle },
