@@ -73,7 +73,7 @@ vim.cmd "colorscheme doric"
 
 Setting `vim.cmd "colorscheme doric"` without calling `setup()` will use
 `doric-light` and `doric-dark` by default. Similarly, both italic and bold
-styles will enabled.
+styles will be enabled.
 
 ## Screenshots
 
