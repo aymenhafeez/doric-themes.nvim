@@ -3,11 +3,16 @@ local M = {}
 local defaults = {
   light = "doric-light",
   dark = "doric-dark",
+  styles = {
+    italic = true,
+    bold = true,
+  },
 }
 
 local options = {
   light = defaults.light,
   dark = defaults.dark,
+  styles = vim.tbl_deep_extend("force", {}, defaults.styles),
 }
 
 function M.setup(opts)
@@ -23,6 +28,10 @@ end
 
 function M.defaults()
   return defaults
+end
+
+function M.options()
+  return options
 end
 
 return M
