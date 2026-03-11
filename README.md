@@ -210,7 +210,6 @@ styles will be enabled.
 ## TODO
 
 * Support for more plugins
-* Style configuration options
 * Options to override highlight groups
 * Complementary themes for terminal emulators
 
