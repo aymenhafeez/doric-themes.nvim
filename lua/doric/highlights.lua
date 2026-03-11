@@ -1,4 +1,16 @@
+local config = require("doric.config")
 local M = {}
+
+local function apply_styles(spec, styles)
+  local styled = spec
+  if styles.italic == false and spec.italic then
+    styled = vim.tbl_extend("force", styled, { italic = false })
+  end
+  if styles.bold == false and spec.bold then
+    styled = vim.tbl_extend("force", styled, { bold = false })
+  end
+  return styled
+end
 
 function M.build(p)
   local groups = {
@@ -258,6 +270,13 @@ function M.build(p)
     ["@diff.delta"] = { fg = p.fg_yellow },
     ["@comment.todo"] = { fg = p.fg_yellow, bold = true },
   }
+
+  local styles = config.options().styles or {}
+  for group, spec in pairs(groups) do
+    if type(spec) == "table" then
+      groups[group] = apply_styles(spec, styles)
+    end
+  end
 
   return groups
 end
