@@ -196,6 +196,8 @@ function M.build(p)
     fzf2 = { link = "StatusLine" },
     fzf3 = { link = "StatusLine" },
 
+    SnacksWinSeparator = { fg = p.bg_shadow_subtle, bg = p.bg_shadow_subtle },
+
     TreesitterContext = { bg = p.bg_main },
     TreesitterContextLineNumber = { fg = p.fg_main, bg = p.bg_main, bold = true },
 
