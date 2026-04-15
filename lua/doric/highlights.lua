@@ -16,7 +16,7 @@ function M.build(p)
   local groups = {
     Normal = { fg = p.fg_main, bg = p.bg_main },
     NormalNC = { fg = p.fg_main, bg = p.bg_main },
-    NormalFloat = { bg = p.bg_shadow_subtle },
+    NormalFloat = { bg = p.bg_neutral },
     Cursor = { fg = p.bg_main, bg = p.cursor },
     CursorLine = { bg = p.bg_accent },
     CursorColumn = { bg = p.bg_shadow_subtle },
@@ -236,7 +236,7 @@ function M.build(p)
     ["@type.builtin"] = { fg = p.fg_shadow_subtle, italic = true },
     ["@type.definition"] = { link = "Type" },
     ["@variable"] = { fg = p.fg_main },
-    ["@variable.builtin"] = { fg = p.fg_blue, bold = true },
+    ["@variable.builtin"] = { fg = p.fg_cyan, bold = true },
     ["@variable.parameter"] = { fg = p.fg_main },
     ["@variable.member"] = { fg = p.fg_yellow },
     ["@constant"] = { link = "Constant" },
