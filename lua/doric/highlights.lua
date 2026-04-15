@@ -48,7 +48,7 @@ function M.build(p)
     PmenuExtra = { link = "Pmenu" },
     PmenuExtraSel = { link = "PmenuSel" },
     Visual = { fg = p.fg_accent, bg = p.bg_shadow_intense },
-    Search = { fg = p.fg_shadow_subtle, bg = p.bg_shadow_intense, italic = true, underline = true },
+    Search = { fg = p.fg_shadow_subtle, italic = true, underline = true },
     CurSearch = { fg = p.fg_main, bg = p.bg_shadow_intense },
     IncSearch = { fg = p.bg_main, bg = p.fg_shadow_intense },
     MatchParen = { fg = p.fg_shadow_intense, bg = p.bg_shadow_intense },
