@@ -28,7 +28,6 @@ function M.build(p)
     SignColumn = { fg = p.fg_shadow_subtle, bg = p.bg_main },
     FoldColumn = { fg = p.fg_shadow_subtle, bg = p.bg_main },
     EndOfBuffer = { fg = p.bg_main },
-    VertSplit = { fg = p.border },
     WinSeparator = { fg = p.border },
     StatusLine = { fg = p.fg_accent, bg = p.bg_shadow_intense },
     StatusLineNC = { fg = p.fg_shadow_subtle, bg = p.bg_shadow_subtle },
